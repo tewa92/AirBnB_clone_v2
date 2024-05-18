@@ -25,6 +25,7 @@ def c(text):
     """displays C <text>"""
     return 'C ' + text.replace('_', ' ')
 
+
 @app.route('/python/', strict_slashes=False)
 @app.route('/python/<text>', strict_slashes=False)
 def python(text='is cool'):
@@ -36,6 +37,7 @@ def python(text='is cool'):
 def number(number):
     """displays number"""
     return str(number) + ' is a number'
+
 
 @app.route('/number_template/<int:number>', strict_slashes=False)
 def number_template(number):
