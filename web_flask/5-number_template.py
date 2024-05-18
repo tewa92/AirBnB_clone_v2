@@ -40,7 +40,7 @@ def number(number):
 @app.route('/number_template/<int:number>', strict_slashes=False)
 def number_template(number):
     """display a HTML page only if n is an integer"""
-    return render_template('./templates/5-number.html', number=number)
+    return render_template('5-number.html', number=number)
 
 
 if __name__ == '__main__':
