@@ -25,6 +25,7 @@ def c(text):
     return 'C ' + text.replace('_', ' ')
 
 
+@app.route('/python/', strict_slashes=False)
 def python(text):
     """displays Python <text>"""
     return 'Python ' + text.replace('_', ' ')
